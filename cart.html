@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <title>BreezyBite</title>
+</head>
+<body>
+   
+ <!----------------------- nav-bar -------------------------->
+<nav class="navbar navbar-expand-lg bg-warning fixed-top">
+  <div class="container">
+    <img src="image/Designer.jpeg" class="logo-img me-1">
+    <a class="navbar-brand me-auto " href="#">Breezy<span>B</span>ite</a>
+    <div class="offcanvas offcanvas-start bg-warning" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Breezy<span>B</span>ite</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cotact.html">Contact us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <a href="cart.html"  class="login-button"><i class="bi bi-cart4"></i><span>Your Cart</span></a>
+    <a href="login.html" class="login-button"><i class="bi bi-person-add"></i></i><span>Login</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav><!--navbar end-->
+<!-------------------------------------------------------- your cart ---------------------------------------------------------->
+<div class="container your-cart">
+    <div class="row">
+        <div class="col-lg-8 col-md-7 col-sm-12 border shadow p-4 your-cart-item">
+            <h1 class="text-center fw-bold">Your Cart</h1>
+            <hr style="margin-top: 40px; margin-bottom: 40px;">
+            <table>
+              <tr>
+                <th style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;">Product</th>
+                <th>Quantity</th>
+                <th >Price</th>
+                <th style="border-top-right-radius: 10px; border-bottom-right-radius: 10px;">Checkout</th>
+              </tr>
+              <tr>
+                <td>
+                  <div class="cart-info">
+                    <img src="image/cake/birthday_cake_4.png">
+                    <div>
+                      <p class="fw-bold">Triple Chocolate Delight</p>
+                      <small>Rs.2300.00</small> <br>
+                      <a href="#" onclick="remove()">Remove</a>
+                    </div>
+                  </div>
+                </td>
+                <td><input type="number" value="1" min="1"></td>
+                <td>Rs.2300.00</td>
+                <td><a href="#" class="Checkout shadow" onclick="order()">Order Now</a></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="cart-info">
+                    <img src="image/burger/burger_7.png">
+                    <div>
+                      <p class="fw-bold">Mushroom Swiss Burger</p>
+                      <small>Rs.1560.00</small> <br>
+                      <a href="#" onclick="remove()">Remove</a>
+                    </div>
+                  </div>
+                </td>
+                <td><input type="number" value="1" min="1"></td>
+                <td>Rs.1560.00</td>
+                <td><a href="#" class="Checkout shadow" onclick="order()">Order Now</a></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="cart-info">
+                    <img src="image/shorties/CHINESE_ROLL.jpg">
+                    <div>
+                      <p class="fw-bold">Vegetable Roll</p>
+                      <small >Rs.70.00</small> <br>
+                      <a href="#" onclick="remove()">Remove</a>
+                    </div>
+                  </div>
+                </td>
+                <td><input type="number" value="1" min="1"></td>
+                <td>Rs.70.00</td>
+                <td><a href="#" class="Checkout shadow" onclick="order()">Order Now</a></td>
+              </tr>
+            </table>
+            
+        </div>
+        <div class="col-lg-4 col-md-5 col-sm-12 border shadow p-4 order-sum">
+            <h1 class="text-center fw-bold">Order Summary</h1>
+            <hr style="margin-top: 40px; margin-bottom: 40px;">
+            <table>
+              <tr>
+                <td>Subtotal :</td>
+                <td>Rs.5000.00</td>
+              </tr>
+              <tr>
+                <td>Tax :</td>
+                <td>Rs.100.00</td>
+              </tr>
+              <tr>
+                <td>Delivery Charges :</td>
+                <td>Rs.350.00</td>
+              </tr>
+              <tr>
+                <td style="border-top: 2px solid;" class="fw-bold">Total :</td>
+                <td class="fw-bold" style="border-top: 2px solid;">Rs.5450.00</td>
+              </tr>
+            </table>
+              <div class="order-sum-btn">
+              <button class="shadow" onclick="cancelOrder()">Cancel</button>
+              <button class="shadow" onclick="order()">Order Now</button> 
+           </div>
+        </div>
+    </div>
+</div>
+<!------------ end your cart ------------>
+
+
+<!------------------------------------------------------------ footer --------------------------------------------------------->
+
+<div class="container-fluid text-light py-4 footer-section mt-5 bg-warning">
+  <div class="container text-dark mt-4">
+    <hr class="mt-5 mb-5">
+      <div class="row">
+        <!-- Open hours Section -->
+        
+          <div class="col-md-4">
+          <h4 class="mb-4 fw-bold">Opening Hours</h4>
+          <p class="footer-open"><i class="bi bi-clock-fill local-icon"></i>Monday to Friday - 5.30am to 9.00pm</p>
+          <p class="footer-open"><i class="bi bi-clock-fill local-icon"></i>Saturday and Sunday - 6.30am to 6.00pm</p>
+          <p class="footer-open"><i class="bi bi-clock-fill local-icon"></i>Poya days - 8.00am to 6.00pm</p>
+          </div>
+                
+                <!-- About Section -->
+          <div class="col-md-2 footer-heading">
+          <h4 class="fw-bold mb-4">About</h4>
+          <a href="about.html" class="location-tag"><p class="footer-open">About us</p></a>
+          <a href="cotact.html" class="location-tag"><p class="footer-open">Contact us</p></a>
+          <a href="feedback.html" class="location-tag"><p class="footer-open">Feedback</p></a>
+          </div>
+
+          <!-- Locations Section -->
+          <div class="col-md-4 footer-heading">
+          <h4 class="mb-4 fw-bold">Head Office</h4>
+          <p class="footer-open"><i class="bi bi-geo-alt-fill local-icon"></i>No. 324/1 D.R.Wijewardena Mawatha, Kandy</p>
+          <p class="footer-open"><i class="bi bi-telephone-fill local-icon"></i>081-2345678</p>
+          <p class="footer-open"><i class="bi bi-envelope-at-fill local-icon"></i>security@breezybitebakers.lk</p>
+          </div>
+            <!-- Policy Section -->
+          <div class="col-md-2 footer-heading">
+          <h4 class="mb-4 fw-bold">Policy</h4>
+          <a href="#" class="location-tag"><p class="footer-open">Terms & Conditions</p></a>
+          <a href="#" class="location-tag"><p class="footer-open">Privacy Policy</p></a>
+          </div>
+      </div>
+  </div>
+    <div class="container text-center mt-5 social-links">
+        <i class="bi bi-twitter-x"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-whatsapp"></i>
+        <i class="bi bi-facebook"></i>
+    </div>
+    <p class="text-center text-dark mt-5">All Right Reserved | Copyright 2024 | Web Solution by SVB</p>
+</div> <!------- end of footer -------->
+
+<script src="js/bootstrap.bundle.js"></script>
+<script>
+  function order(){
+      alert('You are Successfully Ordered!')
+  }
+</script>
+<script>
+  function cancelOrder(){
+      alert('Your Order is Canceld!')
+  }
+  </script>
+  <script>
+    function remove(){
+        alert('Item is Removed')
+    }
+    </script>
+</body>
+</html>

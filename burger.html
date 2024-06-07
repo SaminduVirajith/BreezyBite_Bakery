@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Architects+Daughter&display=swap" rel="stylesheet">
+    <title>BreezyBite</title>
+</head>
+<body>
+   
+  <!--------------------------------------------------- nav-bar --------------------------------------------------------------->
+  <nav class="navbar navbar-expand-lg bg-warning fixed-top">
+    <div class="container">
+      <img src="image/Designer.jpeg" class="logo-img me-1">
+      <a class="navbar-brand me-auto " href="#">Breezy<span>B</span>ite</a>
+      <div class="offcanvas offcanvas-start bg-warning" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Breezy<span>B</span>ite</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cotact.html">Contact us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a href="cart.html"  class="login-button"><i class="bi bi-cart4"></i><span>Your Cart</span></a>
+      <a href="login.html" class="login-button"><i class="bi bi-person-add"></i></i><span>Login</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav><!----------------end nav bar ------------->
+
+  <!---------------------------------------- menu nav-bar --------------------------------------------------------------------->
+<div class="container mt-5 menu-con fixed-top">
+  <button type="button" class="btn border-warning menu-btn" onclick="document.location='menu.html'">Pizza</button>
+  <button type="button" class="btn border-warning menu-btn active-1 shadow" onclick="document.location='burger.html'">Burgers</button>
+  <button type="button" class="btn border-warning menu-btn"  onclick="document.location='cake.html'">Cakes</button>
+  <button type="button" class="btn border-warning menu-btn"  onclick="document.location='Shorties.html'">Shorties</button>
+  <button type="button" class="btn border-warning menu-btn"  onclick="document.location='bread.html'">Breads</button>
+  <button type="button" class="btn border-warning menu-btn" onclick="document.location='bun.html'">Buns</button>
+  <button type="button" class="btn border-warning menu-btn" onclick="document.location='beverage.html'">Beverages</button>
+</div>
+  <!-- end menu nav-bar  ----->
+<hr style="margin-top: 200px;" class="menu-hr">
+<!----------------------------------------- Burger section --------------------------------------------------------------------->
+<div class="container pizza-con">
+  <h1 class="menu-heading trans">Burgers</h1>
+  <div class="card menu-card shadow trans">
+    <img src="image/burger/burger_1.jfif" class="card-img-top menu-image" alt="Zinger Burger">
+    <div class="card-body">
+      <div style="height: 55px;"><h5 class="text-center fw-bold"> Zinger Burger</h5></div>
+      <p class="card-text p-2">Signature chicken burger made with a crunchy chicken fillet, veggies & a delicious mayo sauce.</p>
+      <div class="menu-price-con"><p class="fw-bold text-center menu-price fw-bold">Rs.1100.00</p>
+        <button class="addto-cart shadow" onclick="document.location='cart.html'"><i class="bi bi-cart4"></i>Add to Cart</button>
+      </div>    
+    </div>
+  </div>
+  <div class="card menu-card shadow trans">
+    <img src="image/burger/burger_8.jpg" class="card-img-top menu-image" alt= "Zinger Burger with Cheese">
+    <div class="card-body">
+      <div style="height: 55px;"><h5 class="text-center fw-bold">Zinger Burger with Cheese</h5></div>
+      <p class="card-text p-2">Signature chicken burger made with a crunchy chicken fillet, A slice of cheese, 
+        veggies & delicious mayo.</p>
+      <div class="menu-price-con"><p class="fw-bold text-center menu-price fw-bold">Rs.1250.00</p>
+        <button class="addto-cart shadow" onclick="document.location='cart.html'"><i class="bi bi-cart4"></i>Add to Cart</button>
+      </div>    
+    </div>
+  </div>
+  <div class="card menu-card shadow trans">
+    <img src="image/burger/burger_3.jpeg" class="card-img-top menu-image" alt="Double Decker Burger">
+    <div class="card-body">
+      <div style="height: 55px;"><h5 class="text-center fw-bold">Double Decker Burger</h5></div>
+      <p class="card-text p-2">02 crunchy boneless chicken thigh fillets with signature mayo & Cheese.</p>
+      <div class="menu-price-con"><p class="fw-bold text-center menu-price fw-bold">Rs.1580.00</p>
+        <button class="addto-cart shadow" onclick="document.location='cart.html'"><i class="bi bi-cart4"></i>Add to Cart</button>
+      </div>   
+     </div>
+  </div>
+  <div class="card menu-card shadow trans">
+    <img src="image/burger/burger-9.jpg" class="card-img-top menu-image" alt="Veggie Burger">
+    <div class="card-body">
+      <div style="height: 55px;"><h5 class="text-center fw-bold">Veggie Burger</h5></div>
+      <p class="card-text p-2">Crispy, veg patty with veggies & a delicious mayo sauce.</p>
+      <div class="menu-price-con"><p class="fw-bold text-center menu-price fw-bold">Rs.530.00</p>
+        <button class="addto-cart shadow" onclick="document.location='cart.html'"><i class="bi bi-cart4"></i>Add to Cart</button>
+      </div>    
+    </div>
+  </div>
+  <div class="card menu-card shadow trans">
+    <img src="image/burger/burger_4.png" class="card-img-top menu-image" alt="Veggie Burger + Cheese">
+    <div class="card-body">
+      <div style="height: 55px;"><h5 class="text-center fw-bold">Veggie Burger + Cheese</h5></div>
+      <p class="card-text p-2">Crispy, veg patty with veggies, Cheese & a delicious mayo sauce.</p>
+      <div class="menu-price-con"><p class="fw-bold text-center menu-price fw-bold">Rs.980.00</p>
+        <button class="addto-cart shadow" onclick="document.location='cart.html'"><i class="bi bi-cart4"></i>Add to Cart</button>
+      </div>   
+    </div>
+  </div>
+  <div class="card menu-card shadow trans">
+    <img src="image/burger/burger_6.png" class="card-img-top menu-image" alt="Bacon BBQ Burger">
+    <div class="card-body">
+      <div style="height: 55px;"><h5 class="text-center fw-bold">Bacon BBQ Burger</h5></div>
+      <p class="card-text p-2">Savory and sweet unite with this burger, showcasing a smoky bacon, tangy barbecue 
+        sauce, cheddar cheese, lettuce, and crispy onion straws on a toasted bun.</p>
+      <div class="menu-price-con"><p class="fw-bold text-center menu-price fw-bold">Rs.1850.00</p>
+        <button class="addto-cart shadow" onclick="document.location='cart.html'"><i class="bi bi-cart4"></i>Add to Cart</button>
+      </div>   
+   </div>
+  </div>
+  <div class="card menu-card shadow trans">
+    <img src="image/burger/burger_7.png" class="card-img-top menu-image" alt="Mushroom Swiss Burger">
+    <div class="card-body">
+      <div style="height: 55px;"><h5 class="text-center fw-bold">Mushroom Swiss Burger</h5></div>
+      <p class="card-text p-2">Indulge in earthy flavors as sautéed mushrooms and melted Swiss cheese complement a 
+        succulent beef patty, enhanced by a touch of mayo on a Kaiser roll.</p>
+      <div class="menu-price-con"><p class="fw-bold text-center menu-price fw-bold">Rs.1560.00</p>
+        <button class="addto-cart shadow" onclick="document.location='cart.html'"><i class="bi bi-cart4"></i>Add to Cart</button>
+      </div>    
+    </div>
+  </div>
+  <div class="card menu-card shadow trans">
+    <img src="image/burger/burger_2.jpg" class="card-img-top menu-image" alt="Turkey Avocado Burger">
+    <div class="card-body">
+      <div style="height: 55px;"><h5 class="text-center fw-bold">Turkey Avocado Burger</h5></div>
+      <p class="card-text p-2">A leaner option featuring a turkey patty, creamy avocado slices, sprouts, tomato, 
+        and a cilantro-lime mayo on a whole wheat bun for a fresh, satisfying bite.</p>
+      <div class="menu-price-con"><p class="fw-bold text-center menu-price fw-bold">Rs.1350.00</p>
+        <button class="addto-cart shadow" onclick="document.location='cart.html'"><i class="bi bi-cart4"></i>Add to Cart</button>
+      </div>    
+    </div>
+  </div>
+</div>
+<!------- end Burger section --------->
+
+<script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,776 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*--------------------------------------------------------- navbar ---------------------------------------------------------- */
+.navbar{
+    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+}
+.navbar-brand{
+    font-size: 20px;
+    font-weight: 500;
+}
+.logo-img{
+    max-height: 60px;
+}
+.navbar-brand span, .offcanvas-title span{
+    font-size: 22px;
+    color: rgb(255, 85, 0);
+    font-weight: 800;
+}
+.login-button{  
+    font-size: 15px !important;
+    font-weight: 900;
+    margin-right: 10px;
+    text-decoration: none;
+    border: 2px solid rgb(0, 0, 0) ;
+    border-radius: 30px;
+    padding: 5 10px !important;
+    box-sizing: border-box;    
+}
+.login-button:hover{
+    background-color:  rgb(0, 0, 0) ; 
+    color: rgb(255, 255, 255);
+}
+.nav-item{
+    padding: 8px 20px;
+    box-sizing: border-box;
+}
+.login-button{
+    padding: 2px 20px 5px;
+}
+.nav-item{
+    cursor: pointer;
+}
+.nav-link, .login-button{
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+}
+.nav-link{
+    position: relative;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.nav-link:hover{
+    color: rgb(82, 76, 76);
+    transform: translateY(-3px);
+}
+.bi-person-add, .bi-cart4{
+    font-size: 20px;
+    margin-right: 5px;
+}
+@media only screen and (min-width: 280px) and (max-width: 540px){
+    .login-button{
+        padding: 1px 5px 5px 10px;
+        border-radius: 10px;
+    }
+    .login-button span, .bi-person-add span{
+        display: none;
+    }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1024px){
+    .login-button{
+        padding: 2px 8px 5px 13px;
+        border-radius: 10px;
+    }
+    .login-button span, .bi-person-add span{
+        display: none;
+    }
+}        
+@media screen and (min-width: 991px)  {
+    .nav-link::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);    
+        width: 0;
+        height: 3px;
+        background-color: rgb(239, 239, 8);
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+    .nav-link:hover::before,
+    .nav-link.active::before{
+        width: 100% !important;
+        visibility: visible !important;
+    }
+    }------- end nav bar ------
+
+/*------------------------------------------------------- home page --------------------------------------------------------- */
+/* ------------ slider ---------- */
+.anim{
+    opacity: 0;
+    transform: translateY(50px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.carousel-inner h1{
+    animation-delay: 0.3s;
+}
+.carousel-inner p{
+    animation-delay: 0.6s;
+}
+.banner-text{
+    font-family: 'Permanent Marker', cursive;
+}
+.c-item{
+    height: 700px;
+}
+.c-image{
+    height: 100%;
+    object-fit: cover;
+}
+.carousel-caption {
+    margin-top: 130px !important;
+}
+.banner-btn{
+    padding: 5px 40px 7px;
+    background-color: rgb(255, 193, 7);
+    color: rgb(54, 50, 50);
+    border: 2px solid rgb(255, 193, 7);
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 50px;
+    margin-top: 20px;
+    box-shadow: 2px 5px 5px 2px rgb(33, 33, 33);
+    transition: 0.2s;
+    animation-delay: 1s;
+}
+.banner-btn:hover{
+    transform: translateY(-2px);
+}/*--------- end slider ----------*/
+
+/* -------------- service and and why choose us section ------------------ */
+.reveal{
+    position: relative;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all  .5s ease;
+}
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+.services{
+    font-size: 45px;
+    font-weight: bold;
+}
+.card-service{
+    border-radius: 30px;
+    height: 570px;
+    transition: 0.5s ease;
+    border: 2px solid;
+}
+.card-service:hover{
+    transform: scale(1.1);
+}
+.service-image{
+    padding: 10px;
+    height: 270px;
+    border-radius: 30px;
+}
+.card-title{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.card-text{
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 500;
+}
+.home-about{
+    border-radius: 30px;
+}
+@media only screen and (max-width: 281px){
+    .card{
+        height: 800px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 960px){
+    .service-image{
+        height: 150px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    .card{
+        height: 800px;
+    }
+}
+    /*----- end service and why choose us -----*/
+/*---------------------------- end home page ------------------------- */
+
+/* ------------------------------------------------- footer ----------------------------------------------------------------- */
+.footer-section{
+    background-color: rgb(255, 193, 7);
+}
+.footer-open{
+    line-height: 20px;
+    font-size: 17px;
+    font-weight: 500;
+}
+.local-icon{
+    margin-right: 5px;
+}
+.location-tag{
+    text-decoration: none;
+    color: black;
+}
+.location-tag:hover{
+    color: rgb(59, 58, 58);
+}
+.social-links .bi{
+    border: 2px solid black;
+    color: black;
+    padding: 3px 7px;
+    box-sizing: border-box;
+    font-size: 25px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.social-links .bi:hover{
+    color: white;
+    background-color: black;
+}
+@media(max-width:911px){
+    .footer-open{
+        font-size: 16px;
+    }
+    .footer-heading{
+        margin-top: 30px;
+    }
+}
+@media(max-width:431px){
+    .social-links .bi{
+        font-size: 20px;
+        margin: 5px;
+    }
+}
+@media only screen and (min-width: 280px) and (max-width: 280px){
+    .social-links .bi{
+        font-size: 15px;
+        margin: 1px;
+    }
+}/*------------ end footer -----------------*/
+
+/*---------------------------------------------------- Login page------------------------------------------------------------ */
+.container-fluid{
+    background-color: rgb(45, 44, 44) ;
+}
+.header-text{
+    margin-top: -10px;
+}
+.login-logo{
+    font-size: 30px;
+}
+.signup-btn{
+    width: 100%;
+}
+.signup{
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 193, 7);
+    border: 2px solid rgb(255, 193, 7);
+    transition: 0.5s;
+}
+.signup:hover{
+    color: black;
+    border: 2px solid  rgb(255, 193, 7);
+   background-color:  rgb(255, 201, 37);
+}
+.box-area{
+    width: 930px;
+}
+.right-box{
+    padding: 40px 30px 40px 40px;
+}
+::placeholder{
+    font-size: 16px;
+}
+.rounded-4{
+    border-radius: 20px;
+}
+.rounded-5{
+    border-radius: 30px;
+}
+/* For small screens*/
+@media screen and (max-width: 767px){
+     .box-area{
+        margin: 0 10px;
+     }
+     .left-box{
+        height: 100px;
+        overflow: hidden;
+     }
+     .right-box{
+        padding: 20px;
+     }
+} /*--------- end login page ----------*/
+
+/*---------------------------------------------------- menu page -------------------------------------------------------------*/
+.menu-con{
+    margin-top: 78px !important;
+    background-color: rgb(255, 255, 255);
+    padding-top: 40px;
+}
+.menu-btn{
+    /* display: inline; */
+    width: 150px;
+    height: 50px;
+    margin-right: 15px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    border: 2px solid;
+    transition: 0.3s;
+    font-size: 20px;
+    font-weight: 500;   
+}
+.menu-btn:hover{
+    transform: translateY(-2px);
+    background-color: rgb(255, 193, 7);
+}
+.active-1{
+    background-color: rgb(255, 193, 7);
+}
+.trans{
+    opacity: 0;
+    transform: translateY(150px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@media only screen and (min-width: 279px) and (max-width: 540px){
+    .menu-con{
+        position: static;
+    }
+    .menu-hr{
+        margin-top: -5px !important;
+        visibility: hidden;
+    }
+}
+@media only screen and (min-width: 767px) and (max-width: 1025px){
+    .menu-hr{
+        margin-top: 250px !important;
+     }
+}
+/*--------------------- menu Item section --------------------------*/
+.pizza-con{
+    margin-top: 30px !important;
+}
+.menu-heading{
+    font-family: 'Alfa Slab One', serif;
+    font-size: 50px;
+    animation-delay: .1s;
+}
+.menu-card{
+    position: relative;
+    height: 600px;
+    float: left;
+    width: 250px;
+    margin: 30px 30px 20px 0px;
+    border-radius: 30px;
+    box-shadow: 20px black !important;
+    animation-delay: .3s;
+}
+.menu-image{
+    height: 200px;
+    padding: 10px;
+    border-radius: 30px;
+    cursor: zoom-in;
+}
+.menu-price-con{
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+}
+.menu-price{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.pizza-con .bi{
+    font-size: 17px;
+    margin-right: 10px;
+}
+.addto-cart{
+    display: inline-block;
+    margin-bottom: 10px;
+    width: 200px;
+    border-radius: 30px;
+    padding: 4px;
+    box-sizing: border-box;
+    background-color:  rgb(255, 193, 7);
+    border: 2px solid  rgb(255, 193, 7);
+    font-size: 17px;
+    font-weight: 500;
+}
+.addto-cart:hover{
+    background-color: rgb(255, 205, 57);
+}
+@media only screen and (min-width: 281px) and (max-width: 480px){
+    .pizza-con{
+        width: 80%;
+    }
+    .menu-card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 550px;
+    }
+    .menu-image{
+        width: 70%;
+    }
+    .menu-con{
+        margin-top: 57px !important;
+        padding-top: 40px;
+    }
+    .pizza-con{
+        margin-top: 20px !important;
+    }
+    .menu-btn{
+        width: 110px;
+        height: 40px;
+    }
+}
+@media only screen and (min-width: 540px) and (max-width: 912px){
+    .menu-con{
+        margin-top: 60px !important;
+        padding-top: 40px;
+    }
+    .pizza-con{
+        margin-top: 80px !important;
+    }
+}/*---------- end menu item section ----------*/
+ /*------------------------- end of menu  -------------------*/
+
+ /*--------------------------------------------------- About us page ----------------------------------------------------------*/
+ .aboutus-phara{
+    margin-top: 150px;
+ }
+ .about-phara{
+    text-align: justify;
+ }
+ .about-cont{
+    display: flex;
+    column-gap: 4%;
+ }
+.about-vision{
+    display: block;
+    width: 48%;
+}
+@media only screen and (min-width: 279px) and (max-width: 431px){
+    .about-cont{
+        display: block;
+     }
+    .about-vision{
+        width: 100%;
+    }
+}
+/*-------------- end about us page ------------------*/
+
+/*----------------------------------------------------- contact us page ------------------------------------------------------*/
+.contactus-main{
+    margin-top: 150px;
+    display: flex;
+    column-gap: 4%;
+}
+.contactus, .map-cont{
+    width: 48%;
+}
+.maps{
+    width: 100%;
+}
+@media only screen and (min-width: 279px) and (max-width: 1025px){
+    .contactus-main{
+        display: block;
+        width: 100%;
+    }
+    .contactus, .map-cont{
+        width: 100%;
+    }
+}
+/*---------- end contact us page ----------*/
+/*-------------------------------------------------------- gallery page ------------------------------------------------------*/
+.gallery-con{
+    margin-top: 150px;
+}
+ div.gallery {
+    border: 1px solid #ccc;
+    height: 330px;
+    border-radius: 30px;
+    padding: 10px;
+} 
+ div.gallery:hover {
+    border: 1px solid #777;
+}
+ div.gallery img {
+    width: 100%;
+    height: 250px;
+    border-radius: 30px;
+ }
+ div.desc {
+    padding: 15px;
+    text-align: center;
+ }
+ * {
+    box-sizing: border-box;
+ }
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.9%;
+    height: 350px;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+ @media only screen and (max-width: 700px) {
+    div.gallery{
+        height: 250px;
+    }
+    div.gallery img{
+        height: 150px;
+    }
+    .responsive {
+        width: 49.9%;
+        margin: 6px 0;
+        height: 250px;
+    }
+}
+ @media only screen and (max-width: 500px) {
+    .responsive {
+        width: 50%;
+        height: 250px;
+    }
+}
+ @media only screen and (min-width: 540px) and (max-width: 912px){
+    div.gallery img{
+        height: 200px;
+    }    
+}
+/*---------------- end gallery page ---------------*/
+/*---------------------------------------------------------- feedback form ---------------------------------------------------*/
+/*------------ left side ---------------*/
+.feedback-con{
+    display: flex;
+    margin-top: 150px;
+    column-gap: 4%;
+}
+.feedback{
+    width: 48%;
+    height: 750px;
+    overflow: auto;
+}
+.feedback-con label{
+    margin-bottom: 10px;
+}
+input, textarea{
+    width: 100%;
+}
+.Submit-btn{
+    display: flex;
+    margin-top: 30px;
+    column-gap: 50px;
+}
+.Submit-btn input{
+    padding: 5px 10px;
+    font-size: 20px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    border: 2px solid rgb(255, 193, 7);
+    background-color: rgb(255, 193, 7);
+}
+.Submit-btn input:hover{
+    background-color:  rgb(255, 205, 57);
+}
+.feedback-con form .bi-star{
+    font-size: 20px;
+}
+/*--------------- rigt side -------------*/
+.Rating-Review{
+    overflow: auto;
+}
+.comment{
+    max-width: 550px;
+    margin-top: 30px;
+    border: 2px solid black;
+}
+.comment img{
+    height: 60px;
+    border-radius: 50%;
+}
+.content{
+    display: flex;
+    align-items: center;
+}
+.review{
+    display: block;
+    margin-left: 20px;
+}
+.review i.bi.bi-star-fill{
+    color: rgb(255, 193, 7);
+}
+.comment p{
+    margin-top: 20px;
+}
+@media only screen and (min-width: 279px) and (max-width: 768px){
+    .feedback-con{
+        display: block;
+        width: 100%;
+    }
+    .feedback{
+        width: 100%;
+    }
+    .feedback:not(:first-child){
+        margin-top: 50px;
+    }
+}
+@media (max-width: 300px){
+    .feedback{
+        padding: 3px !important;
+    }
+    comment{
+        width: 100%;
+    }
+}
+/*------------ end feedback form -------------*/
+
+/*------------------------------------------------------- your cart ----------------------------------------------------------*/
+.your-cart{
+    margin-top: 150px;
+}
+.your-cart-item, .order-sum{
+    height: 550px;
+    overflow: auto;
+    margin: 0;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cart-info img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+th{
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgb(255, 193, 7);
+}
+th:last-child{
+    text-align: center;
+}
+td{
+    padding:20px 20px 10px 2px;
+}
+td input{
+    width: 50px;
+    height: 30px;
+    padding: 5px;
+}
+td a{
+    color: red;
+    font-size: 12px;
+}
+.Checkout{
+    display: flex;
+    border-radius: 30px;
+    margin-left: 40px;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+    font-weight: 500;
+    width: 150px;
+    height: 40px;
+    padding: 6px;
+    font-weight: bold;
+    background-color: rgb(255, 193, 7);
+}
+.Checkout:hover{
+    background-color: rgb(255, 205, 57);
+}
+.order-sum td{
+    font-size: 20px;
+}
+.order-sum td:last-child{
+    text-align: end;
+}
+.order-sum td:first-child{
+    font-weight: 500;
+}
+.order-sum-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.order-sum button{
+    margin: 50px 10px 0 20px;
+    background-color: rgb(255, 193, 7);
+    border: 2px solid rgb(255, 193, 7);
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    width: 150px;
+    height: 40px;
+}
+.order-sum button:hover{
+    background-color: rgb(255, 205, 57);
+}
+@media only screen and (min-width: 280px) and (max-width: 912px){
+    .order-sum{
+        margin-top: 60px;
+        width: 100%;
+    }
+    .your-cart-item{
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 280px) and (max-width: 600px){
+    .cart-info img{
+        width: 50px;
+        height: 50px;
+        margin-right: 5px;
+    }
+    th, td{
+        font-size: 15px;
+    }
+    .Checkout{
+        margin-left: 10px;
+        font-size: 15px;
+        width: 100px;
+        height: 30px;
+    }
+}
+@media (max-width: 300px){
+    .order-sum td{
+        font-size: 12px;
+    }
+    .order-sum button{
+        font-size: 13px;
+    }
+} 
+/*-------- end your cart --------*/

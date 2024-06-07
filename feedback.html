@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <title>BreezyBite</title>
+</head>
+<body>
+ <!----------------------- nav-bar -------------------------->
+<nav class="navbar navbar-expand-lg bg-warning fixed-top">
+<div class="container">
+  <img src="image/Designer.jpeg" class="logo-img me-1">
+    <a class="navbar-brand me-auto " href="#">Breezy<span>B</span>ite</a>
+    <div class="offcanvas offcanvas-start bg-warning" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Breezy<span>B</span>ite</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+        <li class="nav-item">
+            <a class="nav-link"href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="menu.html">Menu</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="cotact.html">Contact us</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="about.html">About us</a>
+        </li>
+        </ul>
+    </div>
+    </div>
+    <a href="cart.html"  class="login-button"><i class="bi bi-cart4"></i><span>Your Cart</span></a>
+    <a href="login.html" class="login-button"><i class="bi bi-person-add"></i></i><span>Login</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+</div>
+</nav><!-- navbar end -->
+
+  <!-------------------------------------------------------- feedback form --------------------------------------------------->
+  <!--------------------- left side --------------------------->
+<div class="container feedback-con">
+    <div class=" border shadow feedback p-5">
+        <h1 class="text-center fw-bold">Feedback</h1>
+        <hr class="mt-4 mb-5">
+        <form action="" method="post">
+            
+            <label for="username" class="fw-bold"><i class="bi bi-person-circle mx-3"></i> First Name : </label>
+                 <br>
+            <input type="username" placeholder="John" name="name" required class="form-control">
+                <br>
+            <label for="name" class="fw-bold"><i class="bi bi-person-circle mx-3"></i> Last Name : </label>
+                <br>
+            <input type="email" placeholder="William" name="name" required class="form-control">
+                <br>
+            <label for="email" class="fw-bold"><i class="bi bi-envelope-at-fill mx-3"></i> E-mail : </label>
+                <br>
+            <input type="email" placeholder="example@gmail.com" required class="form-control">
+                <br>
+            <label for="text" class="fw-bold"><i class="bi bi-chat-text-fill mx-3"></i> Message : </label>
+                <br>
+            <textarea name="" id="" cols="20" rows="2" class="form-control" placeholder="Write Your Message Here"></textarea>  
+                <br>
+
+            <label for="text" class="fw-bold mx-3">Rate Us : </label>
+            <i class="bi bi-star star-1"></i>
+            <i class="bi bi-star"></i>
+            <i class="bi bi-star"></i>
+            <i class="bi bi-star"></i>
+            <i class="bi bi-star"></i>
+
+            <div  class="Submit-btn">
+                <input type="submit" value="Send" class="fw-bold shadow">
+                <input type="reset" class="fw-bold shadow">
+            </div>
+        </form>
+    </div><!-- end left side-->
+<!--------------------------------------- rignt side --------------------------------------------->
+    <div class="p-5 border shadow feedback Rating-Review">
+        <h1 class="text-center fw-bold">Rating & Review</h1>
+        <hr>
+        <div class="comment p-4">
+          <div class="content">
+            <img src="image/pic3.png">
+            <div class="review">
+              <h6>Saman Bandara</h6>  
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+          </div>
+            <p> Absolutely delightful experience!😊 The aroma of freshly baked goods hits you as soon as you enter. 
+              The variety of pastries and cakes is impressive, and each item is a masterpiece of flavor and texture.
+               The friendly staff adds to the warm atmosphere. My taste buds thank you for creating such heavenly treats!😍</p>
+        </div>
+        <div class="comment p-4">
+          <div class="content">
+            <img src="image/pic2.jfif">
+            <div class="review">
+              <h6>Emily Ava</h6>  
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+          </div>
+            <p> A hidden gem for all dessert lovers!🥰 The pastries are not only visually appealing but also incredibly 
+              scrumptious. The attention to detail and quality of ingredients are evident in every bite. The ambiance is cozy,
+               making it the perfect spot to enjoy a cup of coffee with a divine pastry💕. My go-to place for satisfying my 
+               sweet  cravings!</p>
+         </div>
+        <div class="comment p-4">
+          <div class="content">
+            <img src="image/pic1.jpg">
+            <div class="review">
+              <h6>Isabella Harper</h6>  
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+          </div>
+            <p> Exceptional bakery with an exquisite selection of treats 👌! The taste and presentation of the pastries are
+               beyond compare 👍. The staff is knowledgeable and always ready to help you choose the perfect dessert. I love how
+                they combine traditional recipes with a modern twist. Visiting this bakery is a true delight for anyone with a 
+                sweet tooth ❤️!</p>
+        </div>
+     </div>
+</div><!------- end left side ------->
+  <!--------------------------- end feedback form ------------------------->
+
+ <!--------------------------------------------- footer ------------------------------------------->
+
+ <div class="container-fluid text-light py-4 footer-section mt-5 bg-warning">
+    <div class="container text-dark mt-4">
+      <hr class="mt-5 mb-5">
+    <div class="row">
+      <!-- Open hours Section -->
+      
+      <div class="col-md-4">
+        <h4 class="mb-4 fw-bold">Opening Hours</h4>
+        <p class="footer-open"><i class="bi bi-clock-fill local-icon"></i>Monday to Friday - 5.30am to 9.00pm</p>
+        <p class="footer-open"><i class="bi bi-clock-fill local-icon"></i>Saturday and Sunday - 6.30am to 6.00pm</p>
+        <p class="footer-open"><i class="bi bi-clock-fill local-icon"></i>Poya days - 8.00am to 6.00pm</p>
+      </div>
+      
+      <!-- About Section -->
+      <div class="col-md-2 footer-heading">
+        <h4 class="fw-bold mb-4">About</h4>
+        <a href="about.html" class="location-tag"><p class="footer-open">About us</p></a>
+        <a href="cotact.html" class="location-tag"><p class="footer-open">Contact us</p></a>
+        <a href="feedback.html" class="location-tag"><p class="footer-open">Feedback</p></a>
+      </div>
+  
+      <!-- Locations Section -->
+      <div class="col-md-4 footer-heading">
+        <h4 class="mb-4 fw-bold">Head Office</h4>
+        <p class="footer-open"><i class="bi bi-geo-alt-fill local-icon"></i>No. 324/1 D.R.Wijewardena Mawatha, Kandy</p>
+        <p class="footer-open"><i class="bi bi-telephone-fill local-icon"></i>081-2345678</p>
+        <p class="footer-open"><i class="bi bi-envelope-at-fill local-icon"></i>security@breezybitebakers.lk</p>
+      </div>
+    <!-- Policy Section -->
+      <div class="col-md-2 footer-heading">
+        <h4 class="mb-4 fw-bold">Policy</h4>
+        <a href="#" class="location-tag"><p class="footer-open">Terms & Conditions</p></a>
+        <a href="#" class="location-tag"><p class="footer-open">Privacy Policy</p></a>
+      </div>
+    </div>
+    </div>
+    <div class="container text-center mt-5 social-links">
+      <i class="bi bi-twitter-x"></i>
+      <i class="bi bi-instagram"></i>
+      <i class="bi bi-whatsapp"></i>
+      <i class="bi bi-facebook"></i>
+    </div>
+      <p class="text-center text-dark mt-5">All Right Reserved | Copyright 2024 | Web Solution by SVB</p>
+</div> <!------- end of footer -------->
+  <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>

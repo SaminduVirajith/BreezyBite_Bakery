@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="image/Designer.jpeg">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <title>BreezyBite</title>
+</head>
+<body>
+   
+<!------------------------------------------------------ nav-bar -------------------------------------------------------------->
+<nav class="navbar navbar-expand-lg bg-warning fixed-top">
+  <div class="container">
+    <img src="image/Designer.jpeg" class="logo-img me-1">
+    <a class="navbar-brand me-auto " href="#">Breezy<span>B</span>ite</a>
+    <div class="offcanvas offcanvas-start bg-warning" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Breezy<span>B</span>ite</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cotact.html">Contact us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <a href="cart.html"  class="login-button"><i class="bi bi-cart4"></i><span>Your Cart</span></a>
+    <a href="login.html" class="login-button"><i class="bi bi-person-add"></i></i><span>Login</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav><!--navbar end-->
+
+  <!------------------------------ Slider ------------------------------------->
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active c-item">
+        <img src="image/burger.jpg" class="d-block w-100 c-image" alt="burger">
+        <div class="carousel-caption top-0 mt-5">
+          <h2 class="display-1 fw-bold banner-text anim" style="margin-top: 100px;"><b>Buy 1 Get 1 Free</b></h2>
+          <h1 class="anim"><b>Rs.950 Only</b></h1>
+          <p class="h5 anim">Valid on January 6<sup>th</sup> to 13<sup>th</sup> for Diner-In, Takeaway & Delivery</p>
+          <a href="#"><button class="banner-btn anim" onclick="document.location='cart.html'">Buy now</button></a>
+        </div>
+      </div>
+      <div class="carousel-item c-item">
+        <img src="image/cake.jpg" class="d-block w-100 c-image" alt="cake">
+        <div class="carousel-caption top-0 mt-5">
+          <h1 class="display-1 fw-bold banner-text"  style="margin-top: 100px;"><b>Valentine Offer</b></h1>
+          <h1><b>Rs.1000 Only</b></h1>
+          <p class="h5">70% off</p>
+          <a href="#"><button class="banner-btn" onclick="document.location='cart.html'">Buy now</button></a>
+        </div>
+      </div>
+      <div class="carousel-item c-item">
+        <img src="image/1643296375.jpg" class="d-block w-100 c-image" alt="pizza">
+        <div class="carousel-caption top-0 mt-5">
+          <h1 class="display-1 fw-bold banner-text"  style="margin-top: 100px;"><b>Year End Vibes</b></h1>
+          <h2 class="text-light fw-bold">Buy 2 Medium Pan Pizza & Get</h2>
+          <h1 class="text-light fw-bold"><b>Rs.500 OFF</b></h1>
+          <p class="h5 text-light fw-bold">Valid Till 6<sup>th</sup> January 2024</p>
+          <a href="#"><button class="banner-btn mt-1" onclick="document.location='cart.html'">Buy now</button></a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div><!--slider end-->
+
+  <!------------------home page services -------------------------------->
+  <p class="text-center mt-4 services reveal">Our Services</p>
+  <div class="container mt-4 reveal">
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card border-warning card-service">
+        <img src="image/delivery.jpg" class="card-img-top service-image">
+        <div class="card-body">
+          <h5 class="card-title">Cash on Delivery</h5>
+          <p class="card-text px-4">Secure and reliable payment method.
+            Flexibility for customers to pay in cash upon receiving their orders.
+            Enhanced customer trust through the ability to inspect items before payment.
+            Streamlined checkout process for a hassle-free experience.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card border-warning card-service">
+        <img src="image/coustomize.jpg" class="card-img-top service-image">
+        <div class="card-body">
+          <h5 class="card-title">Customized Cakes</h5>
+          <p class="card-text px-4"> Extensive options for flavors, designs, and decorations.
+            User-friendly customization interface for a seamless ordering process.
+            Personalized messages and themes to suit any celebration.
+            Expertly crafted, high-quality cakes tailored to individual preferences.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card border-warning card-service">
+        <img src="image/coustomer_service.webp" class="card-img-top service-image">
+        <div class="card-body">
+          <h5 class="card-title">Friendly Customer Service</h5>
+          <p class="card-text px-4">Dedicated and knowledgeable customer service team.
+            Prompt and courteous assistance with inquiries, concerns, and special requests.
+            Personalized support to address individual preferences and requirements.
+            Commitment to enhancing the overall dining experience through exceptional customer service.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- end home page services-->
+
+<!--------------------- Why Choose us --------------------->
+
+<p class="text-center mt-5 services reveal">Why Choose Us</p>
+  <div class="container mt-4 reveal">
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card border-warning card-service">
+        <img src="image/qulity_item.png" class="card-img-top service-image">
+        <div class="card-body">
+          <h5 class="card-title">Quality Of Item</h5>
+          <p class="card-text px-4">Use of fresh, premium, and high-quality ingredients.
+            Meticulously crafted dishes by skilled chefs.
+            Focus on flavor, texture, and culinary excellence.
+            Commitment to surpassing customer expectations with every meal.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card border-warning card-service">
+        <img src="image/clean.jpg" class="card-img-top service-image">
+        <div class="card-body">
+          <h5 class="card-title">Clean</h5>
+          <p class="card-text px-4">Impeccable hygiene practices and rigorous sanitation protocols.
+            Regular maintenance to uphold cleanliness standards.
+            Commitment to providing a spotless and inviting dining environment.
+            Ensuring customer comfort through a clean and well-maintained space.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card border-warning card-service">
+        <img src="image/price.jpg" class="card-img-top service-image">
+        <div class="card-body">
+          <h5 class="card-title">Reasonable Price</h5>
+          <p class="card-text px-4">Striking a balance between culinary excellence and affordability.
+            Transparent pricing to provide clarity and value to customers.
+            Offering a range of options to suit various budgets.
+            Dedication to making every dining experience at our restaurant a cost-effective and delightful choice.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!--end why choose us-->
+
+<!---------- vision and mossion ------------->
+<div class="container about-cont ">
+  <div class="mt-5 border shadow about-vision p-5 text-center reveal border-warning home-about">
+    <h3 class="fw-bold vision-text pb-3">Our Vision</h3>
+    <hr>
+    <p class="about-phara fw-bold mt-4">To be the premier source of joy through exceptional baked delights, setting the standard for 
+      quality and innovation, enriching lives with warmth and flavor.</p>
+  </div>
+  <div class="border shadow about-vision p-5 text-center mt-5 reveal  border-warning home-about">
+    <h3 class="fw-bold vision-text pb-3">Our Mission</h3>
+    <hr>
+    <p class="about-phara fw-bold mt-4"> Dedicated to crafting and delivering the finest baked goods, we strive to create memorable 
+      moments through freshness, creativity, and a commitment to community and customer satisfaction.</p>
+</div>
+</div><!-- end vision and mossion -->
+
+<!------------ end abou us ------------>
+
+<!-------------------------- footer --------------------------->
+
+  <div class="container-fluid text-light py-4 footer-section mt-5 bg-warning">
+      <div class="container text-dark mt-4">
+        <hr class="mt-5 mb-5">
+      <div class="row">
+        <!-- Open hours Section -->
+        
+        <div class="col-md-4">
+          <h4 class="mb-4 fw-bold">Opening Hours</h4>
+          <p class="footer-open"><i class="bi bi-clock-fill local-icon"></i>Monday to Friday - 5.30am to 9.00pm</p>
+          <p class="footer-open"><i class="bi bi-clock-fill local-icon"></i>Saturday and Sunday - 6.30am to 6.00pm</p>
+          <p class="footer-open"><i class="bi bi-clock-fill local-icon"></i>Poya days - 8.00am to 6.00pm</p>
+        </div>
+        
+        <!-- About Section -->
+        <div class="col-md-2 footer-heading">
+          <h4 class="fw-bold mb-4">About</h4>
+          <a href="about.html" class="location-tag"><p class="footer-open">About us</p></a>
+          <a href="cotact.html" class="location-tag"><p class="footer-open">Contact us</p></a>
+          <a href="feedback.html" class="location-tag"><p class="footer-open">Feedback</p></a>
+        </div>
+
+        <!-- Locations Section -->
+        <div class="col-md-4 footer-heading">
+          <h4 class="mb-4 fw-bold">Head Office</h4>
+          <p class="footer-open"><i class="bi bi-geo-alt-fill local-icon"></i>No. 324/1 D.R.Wijewardena Mawatha, Kandy</p>
+          <p class="footer-open"><i class="bi bi-telephone-fill local-icon"></i>081-2345678</p>
+          <p class="footer-open"><i class="bi bi-envelope-at-fill local-icon"></i>security@breezybitebakers.lk</p>
+      </div>
+      <!-- Policy Section -->
+        <div class="col-md-2 footer-heading">
+          <h4 class="mb-4 fw-bold">Policy</h4>
+          <a href="#" class="location-tag"><p class="footer-open">Terms & Conditions</p></a>
+          <a href="#" class="location-tag"><p class="footer-open">Privacy Policy</p></a>
+        </div>
+      </div>
+    </div>
+    <div class="container text-center mt-5 social-links">
+    <i class="bi bi-twitter-x"></i>
+    <i class="bi bi-instagram"></i>
+    <i class="bi bi-whatsapp"></i>
+    <i class="bi bi-facebook"></i>
+  </div>
+  <p class="text-center text-dark mt-5">All Right Reserved | Copyright 2024 | Web Solution by SVB</p>
+</div><!------- end of footer -------->
+
+<script src="js/bootstrap.bundle.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

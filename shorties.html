@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Architects+Daughter&display=swap" rel="stylesheet">
+    <title>BreezyBite</title>
+</head>
+<body>
+   
+  <!--------------------------------------------------- nav-bar --------------------------------------------------------------->
+<nav class="navbar navbar-expand-lg bg-warning fixed-top">
+  <div class="container">
+    <img src="image/Designer.jpeg" class="logo-img me-1">
+    <a class="navbar-brand me-auto " href="#">Breezy<span>B</span>ite</a>
+    <div class="offcanvas offcanvas-start bg-warning" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Breezy<span>B</span>ite</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cotact.html">Contact us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <a href="cart.html" class="login-button"><i class="bi bi-cart4"></i><span>Your Cart</span></a>
+    <a href="login.html" class="login-button"><i class="bi bi-person-add"></i></i><span>Login</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav><!----------------end nav bar ------------->
+
+  <!---------------------------------------- menu nav-bar --------------------------------------------------------------------->
+<div class="container mt-5 menu-con fixed-top">
+  <button type="button" class="btn border-warning menu-btn" onclick="document.location='menu.html'">Pizza</button>
+  <button type="button" class="btn border-warning menu-btn" onclick="document.location='burger.html'">Burgers</button>
+  <button type="button" class="btn border-warning menu-btn" onclick="document.location='cake.html'">Cakes</button>
+  <button type="button" class="btn border-warning menu-btn active-1 shadow" onclick="document.location='Shorties.html'">Shorties</button>
+  <button type="button" class="btn border-warning menu-btn" onclick="document.location='bread.html'">Breads</button>
+  <button type="button" class="btn border-warning menu-btn" onclick="document.location='bun.html'">Buns</button>
+  <button type="button" class="btn border-warning menu-btn" onclick="document.location='beverage.html'">Beverages</button> 
+</div>
+  <!-- end menu nav-bar  ----->
+<hr style="margin-top: 200px;" class="menu-hr">
+<!----------------------------------------- Shorties section --------------------------------------------------------------------->
+<div class="container pizza-con">
+  <h1 class="menu-heading trans">Shorties</h1>
+  <div class="card menu-card shadow trans">
+    <img src="image/shorties/Samosa_!.jpg" class="card-img-top menu-image" alt="vegetable samosa">
+    <div class="card-body">
+      <div style="height: 55px;"><h5 class="text-center fw-bold">Vegetable Samosa</h5></div>
+      <p class="card-text p-2"> a fried South Asian pastry with a savoury filling, including ingredients such as
+         spiced potatoes, onions, peas.</p>
+      <div class="menu-price-con"><p class="fw-bold text-center menu-price fw-bold">Rs.60.00</p>
+        <button class="addto-cart shadow" onclick="document.location='cart.html'"><i class="bi bi-cart4"></i>Add to Cart</button>
+      </div>    
+    </div>
+  </div>
+  <div class="card menu-card shadow trans">
+    <img src="image/shorties/samosa_2.jpg" class="card-img-top menu-image" alt="Chicken samosa">  
+    <div class="card-body">
+      <div style="height: 55px;"><h5 class="text-center fw-bold">Chicken Samosa</h5></div>
+      <p class="card-text p-2"> a fried South Asian pastry with a savoury filling, including ingredients such as
+         spiced potatoes, onions, peas, and chicken.</p>
+      <div class="menu-price-con"><p class="fw-bold text-center menu-price fw-bold">Rs.100.00</p>
+        <button class="addto-cart shadow" onclick="document.location='cart.html'"><i class="bi bi-cart4"></i>Add to Cart</button>
+      </div>   
+     </div>
+  </div>
+  <div class="card menu-card shadow trans">
+    <img src="image/shorties/CHINESE_ROLL.jpg" class="card-img-top menu-image" alt=" vegetable CHINESE ROLL">
+    <div class="card-body">
+      <div style="height: 55px;"><h5 class="text-center fw-bold">Vegetable Roll</h5></div>
+      <p class="card-text p-2">Make vegetable filling, prepare thin pancakes with water and turmeric, coat with flour, 
+      breadcrumbs, deep-fry for a flavorful, crispy snack.</p>
+      <div class="menu-price-con"><p class="fw-bold text-center menu-price fw-bold">Rs.70.00</p>
+        <button class="addto-cart shadow" onclick="document.location='cart.html'"><i class="bi bi-cart4"></i>Add to Cart</button>
+      </div>    
+    </div>
+  </div>
+  <div class="card menu-card shadow trans">
+    <img src="image/shorties/Sri-Lanken-Fish-Rolls.webp" class="card-img-top menu-image" alt="Fish Rolls">
+    <div class="card-body">
+      <div style="height: 55px;"><h5 class="text-center fw-bold">Fish Roll</h5></div>
+      <p class="card-text p-2">
+        Make fish filling, prepare thin pancakes with water and turmeric, coat with flour, eggs, breadcrumbs, deep-fry for
+         a flavorful, crispy snack.</p>
+      <div class="menu-price-con"><p class="fw-bold text-center menu-price fw-bold">Rs.110.00</p>
+        <button class="addto-cart shadow" onclick="document.location='cart.html'"><i class="bi bi-cart4"></i>Add to Cart</button>
+      </div>    
+    </div>
+  </div>
+  <div class="card menu-card shadow trans">
+    <img src="image/shorties/cutlet.webp" class="card-img-top menu-image" alt="Cutlet">
+    <div class="card-body">
+      <div style="height: 55px;"><h5 class="text-center fw-bold">Cutlet</h5></div>
+      <p class="card-text p-2">Deep-fry a blend of mackerel, gold potatoes, curry leaves,egg, and green chilies.</p>
+      <div class="menu-price-con"><p class="fw-bold text-center menu-price fw-bold">Rs.30.00</p>
+        <button class="addto-cart shadow" onclick="document.location='cart.html'"><i class="bi bi-cart4"></i>Add to Cart</button>
+      </div>    
+    </div>
+  </div>
+  <div class="card menu-card shadow trans">
+    <img src="image/shorties/vegitable_roti.webp" class="card-img-top menu-image" alt="Vegetable rotti">
+    <div class="card-body">
+      <div style="height: 55px;"><h5 class="text-center fw-bold">Vegetable Rotti</h5></div>
+      <p class="card-text p-2">onions, curry leaves, ginger-garlic paste. Add veggies, curry powder, salt. Simmer with mashed potatoes
+         until thick. Prepare dough, rest, fry.</p>
+      <div class="menu-price-con"><p class="fw-bold text-center menu-price fw-bold">Rs.80.00</p>
+        <button class="addto-cart shadow" onclick="document.location='cart.html'"><i class="bi bi-cart4"></i>Add to Cart</button>
+      </div>    
+    </div>
+  </div>
+  <div class="card menu-card shadow trans">
+    <img src="image/shorties/patis.jpg" class="card-img-top menu-image" alt="patis">
+    <div class="card-body">
+      <div style="height: 55px;"><h5 class="text-center fw-bold">Patis</h5></div>
+      <p class="card-text p-2"> patties are a flakey pastry filled with spicy mackerel, potato and seasoned 
+        with spices, then deep-fried in hot oil</p>
+      <div class="menu-price-con"><p class="fw-bold text-center menu-price fw-bold">Rs.60.00</p>
+        <button class="addto-cart shadow" onclick="document.location='cart.html'"><i class="bi bi-cart4"></i>Add to Cart</button>
+      </div>    
+    </div>
+  </div>
+  
+  
+  
+</div>
+<!------- end Shorties section --------->
+
+<script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>
